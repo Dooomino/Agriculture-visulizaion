@@ -8,3 +8,6 @@ This project needs a bit load to do calculation, it is recommend to use a local 
 then open the IP in browser:
 
     127.0.0.1:8000
+
+# Exisst problems
+due to different browser policy and processing speed, there wouuld be some cases that the graph won't generate. So if it happens refresh the page and wait for a bit.

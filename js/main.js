@@ -60,10 +60,10 @@ var sliderWeather = d3
 svg.append('g')
   .attr("transform", "translate(" + (mapW - 150) + ", " + (mapH * 0.3) + ")")
   .call(sliderWeather);
-
+var yearlyData;
 function updateVisDataColours() {
   if (visData.length != 0) {
-    var yearlyData = weatherData[selectedYear]
+    yearlyData = weatherData[selectedYear]
     visData = visData.map((d) => {
       var hexLonLat = cordRound(proj.invert([d.x, d.y]))
       if ((yearlyData != undefined) &&
